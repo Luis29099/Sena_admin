@@ -8,27 +8,7 @@ use Illuminate\Http\Request;
 
 class ComputerController extends Controller
 {
-//     public function index(){
-    
-//         $computers = computer::all();
-//         return view('computer.index', compact('computers'));
-//     }
 
-
-
-//      public function create()
-//       {
-//         return view('computer.create');
-//       }
-
-//      public function store(Request $request)
-// {
-//     $computer = new computer();
-//     $computer->number = $request->number;
-//     $computer->brand = $request->brand;
-//     $computer->save();
-//     return redirect()->route('computer.index');
-// }
 public function index(){
     $computers = computer::all();
     return view('computer.index', compact('computers'));
